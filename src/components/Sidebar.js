@@ -1,10 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData'
-import '../styles/Sidebar.scss';
+import '../assets/styles/Sidebar.scss';
 import { IconContext } from 'react-icons'
 
 function Navbar() {
+
+  /*let image = require('../assets/images/sphere2-unscreen.gif').default;
+  const states = {
+    'default': '',
+    'hover': {image}
+  }
+
+  let img = document.querySelector('#hover-img');
+
+  img.addEventListener('mouseenter', function(e) {
+    img.setAttribute('src', states.hover);
+  });
+  img.addEventListener('mouseleave', function(e) {
+    img.setAttribute('src', states.default);
+  });*/
+
   return (
     <>
     <IconContext.Provider value={{ color: '#fff' }}>

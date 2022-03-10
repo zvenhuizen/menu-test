@@ -1,43 +1,43 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
+import * as GiIcons from 'react-icons/gi';
 import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
+import * as BsIcons from 'react-icons/bs';
 
 export const SidebarData = [
   {
     title: 'Home',
     path: '/',
-    icon: <AiIcons.AiFillHome />,
+    icon: <AiIcons.AiOutlineHome />,
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
-    path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
+    title: 'Status',
+    path: '/status',
+    icon: <GiIcons.GiBatteryPackAlt />,
     cName: 'nav-text'
   },
   {
-    title: 'Products',
-    path: '/products',
-    icon: <FaIcons.FaCartPlus />,
+    title: 'Items',
+    path: '/items',
+    icon: <AiIcons.AiOutlineUnorderedList />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />,
+    title: 'Talents',
+    path: '/talents',
+    icon: <GiIcons.GiStarsStack />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    title: 'Gear',
+    path: '/gear',
+    icon: <GiIcons.GiBattleGear />,
     cName: 'nav-text'
   },
   {
-    title: 'Support',
-    path: '/support',
-    icon: <IoIcons.IoMdHelpCircle />,
+    title: 'Info',
+    path: '/info',
+    icon: <BsIcons.BsInfoCircle />,
     cName: 'nav-text'
   }
 ]
