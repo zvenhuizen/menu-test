@@ -1,43 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData'
 import '../assets/styles/Sidebar.scss';
 import { IconContext } from 'react-icons'
+import * as GiIcons from 'react-icons/gi';
+import * as AiIcons from 'react-icons/ai';
+import * as BsIcons from 'react-icons/bs';
 
 function Navbar() {
 
-  /*let image = require('../assets/images/sphere2-unscreen.gif').default;
-  const states = {
-    'default': '',
-    'hover': {image}
-  }
-
-  let img = document.querySelector('#hover-img');
-
-  img.addEventListener('mouseenter', function(e) {
-    img.setAttribute('src', states.hover);
-  });
-  img.addEventListener('mouseleave', function(e) {
-    img.setAttribute('src', states.default);
-  });*/
-
   return (
     <>
-    <IconContext.Provider value={{ color: '#fff' }}>
-      <nav className='nav-menu active'>
-        <ul className='nav-menu-items'>
-          {SidebarData.map((item, index) => {
-            return(
-              <li key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            );
-          })};
-        </ul>
-      </nav>
+    <IconContext.Provider value={{ color: '#fff' }}> {/*Turns icons this color*/}
+      <div className='sidenav-menu'>
+        <a href='/'><AiIcons.AiOutlineHome />
+          <span>Home</span></a>
+        <a href='/status'><GiIcons.GiBatteryPackAlt />
+          <span>Status</span></a>
+        <a href='/items'><AiIcons.AiOutlineUnorderedList />
+          <span>Items</span></a>
+        <a href='/talents'><GiIcons.GiStarsStack />
+          <span>Talents</span></a>
+        <a href='/gear'><GiIcons.GiBattleGear />
+          <span>Gear</span></a>
+        <a href='/info'><BsIcons.BsInfoCircle />
+          <span>Info</span></a>
+      </div>
     </IconContext.Provider>
     </>
   )
