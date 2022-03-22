@@ -1,0 +1,88 @@
+@import 'Variables';
+
+.command-center {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 388px 210px 135px 167.5px 167.5px 190px 210px 1fr;
+  grid-template-rows: repeat(6, 65px) repeat(2, 65px) repeat(4, 42px);
+  align-items: top;
+  text-transform: uppercase;
+}
+
+.command-mission {
+  grid-column: 4 / 6;
+  grid-row: 7;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+  -webkit-text-stroke: 1px $tealDarker;
+  font-weight: bold;
+  color: $white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-decoration: none;
+  & :hover {
+    cursor: pointer;
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+  }
+}
+
+.command-characters {
+  grid-column: 2;
+  grid-row: 8;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-left: 28px;
+  margin-top: 10px;
+  -webkit-text-stroke: 1px $tealDarker;
+  font-weight: bold;
+  color: $white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+
+.command-fleet {
+  grid-column: 5;
+  grid-row: 9;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+  letter-spacing: 2px;
+  -webkit-text-stroke: 1px $tealDarker;
+  font-weight: bold;
+  color: $white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+
+.command-org {
+  grid-column: 7;
+  grid-row: 8;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  -webkit-text-stroke: 1px $tealDarker;
+  font-weight: bold;
+  color: $white;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-decoration: none;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #008080, 0 0 40px #008080, 0 0 50px #008080, 0 0 60px #008080, 0 0 70px #008080;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #94ffff, 0 0 40px #94ffff, 0 0 50px #94ffff, 0 0 60px #94ffff, 0 0 70px #94ffff, 0 0 80px #94ffff;
+  }
+}
